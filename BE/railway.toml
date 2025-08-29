@@ -4,8 +4,12 @@
 builder = "NIXPACKS"
 buildCommand = "pip install -r requirements.txt"
 
+[build]
+builder = "nixpacks"
+
 [build.nixpacks]
-packages = ["libgl1", "libglib2.0-0"]
+packages = ["libgl1", "libglib2.0-0", "ffmpeg", "libsm6", "libxext6"]
+
 
 [deploy]
 startCommand = "gunicorn app:app --bind 0.0.0.0:$PORT --workers 4"
