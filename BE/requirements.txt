@@ -9,16 +9,9 @@ gunicorn
 
 # Computer Vision and AI
 ultralytics==8.2.52
-opencv_contrib_python==4.8.1.78
-opencv-python==4.8.1.78
+opencv-python-headless==4.8.1.78
 numpy==1.26.4
 Pillow==10.0.1
-
-# Machine Learning & Computer Vision
-torch==2.2.2+cpu
-torchvision==0.17.2+cpu
-torchaudio==2.2.2+cpu
--f https://download.pytorch.org/whl/torch_stable.html
 
 # build tools supaya Railway tidak error
 setuptools
@@ -32,3 +25,9 @@ uuid==1.30
 # Development and testing
 pytest==7.4.2
 pytest-flask==1.2.0
+
+# Machine Learning & Computer Vision
+torch==2.2.2+cpu
+torchvision==0.17.2+cpu
+torchaudio==2.2.2+cpu
+-f https://download.pytorch.org/whl/torch_stable.html
