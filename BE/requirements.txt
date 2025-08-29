@@ -15,6 +15,10 @@ Pillow==10.0.1
 torch>=2.0.0
 torchvision>=0.15.0
 
+# build tools supaya Railway tidak error
+setuptools
+wheel
+
 # File handling and utilities
 python-multipart==0.0.6
 python-dotenv==1.0.0
