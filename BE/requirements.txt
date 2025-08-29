@@ -9,7 +9,8 @@ gunicorn
 
 # Computer Vision and AI
 ultralytics==8.2.52
-opencv-python-headless==4.8.1.78
+opencv_contrib_python==4.8.1.78
+opencv-python==4.8.1.78
 numpy==1.26.4
 Pillow==10.0.1
 
