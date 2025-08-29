@@ -4,6 +4,9 @@
 builder = "NIXPACKS"
 buildCommand = "pip install -r requirements.txt"
 
+[build.nixpacks]
+packages = ["libgl1", "libglib2.0-0"]
+
 [deploy]
 startCommand = "gunicorn app:app --bind 0.0.0.0:$PORT --workers 4"
 restartPolicyType = "ON_FAILURE"
